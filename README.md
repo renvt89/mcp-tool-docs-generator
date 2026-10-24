@@ -1,15 +1,31 @@
-# MCP Tool Docs Generator (mcp-docs)
+# MCP Tool Docs Generator
 
-- **What you get:** mcp-docs, a generator that turns any MCP (Model Context Protocol) server's tool definitions into listing-ready documentation (tool list, parameters, examples) for MCP directories and READMEs. It is a ZIP with the source, install notes and docs.
-- **Who it is for:** developers who build or maintain MCP servers and need clean docs before they submit to MCP directories.
-- **Delivered by a human:** built and supported by Rene Vergara. Support questions get a personal reply from him, not an autoresponder.
-- **Price:** pay what you want on Gumroad, from $0 (suggested $5): https://renevibe76.gumroad.com/l/bmzwpm
-- **Turnaround:** instant download after checkout. Support questions are answered within 48h.
+A zero-dependency CLI tool that generates documentation for MCP server tools.
 
-## About this repository
+## Features
+- Connects to any stdio MCP server
+- Generates a TOOLS.md file with one Markdown page per tool
+- Generates a tools.json file for easy reference
 
-This is the public listing repository for the MCP Tool Docs Generator, used by MCP directories. The full package (source, install notes and docs) is the Gumroad download linked above.
+## Installation
 
-## Support
+```bash
+npm install mcp-tool-docs-generator
+```
 
-For questions, open an issue in this repository.
+## Usage
+
+Connect to the MCP server and generate documentation:
+
+```bash
+mcp-tool-docs-generator --server-url http://localhost:8000
+```
+
+## Gumroad Listing
+
+For more information and to support this project, visit:
+[MCP Tool Docs Generator on Gumroad](https://renevibe76.gumroad.com/l/bmzwpm)
+
+## License
+
+MIT License
